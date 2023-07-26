@@ -11,26 +11,16 @@ In this section, I used Python and SQLAlchemy to do a basic climate analysis and
 ### Precipitation Analysis
 I found the most recent date in the dataset and used that date to get the previous 12 months of precipitation data by querying the previous 12 months of data. I loaded the query results into a Pandas DataFrame and set the column names, sorting the values by "date."
 
-Below you can see the plot of the results:
+Below you can see the plot of my results:
 
-![](
+![](https://github.com/Houdini24/sqlalchemy-challenge/blob/main/Resources/Precipitation%20Image.png)
 
 ### Station Analysis
+I then designed a query to calculate the total number of stations in the dataset, and to find the most-active stations (that is, the stations that have the most rows). To do so, I listed the stations and observation counts in descending order. I also designed a query that calculates the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query.
 
-Design a query to calculate the total number of stations in the dataset.
-Design a query to find the most-active stations (that is, the stations that have the most rows). To do so, complete the following steps:
-List the stations and observation counts in descending order.
-HINT
-Answer the following question: which station id has the greatest number of observations?
-Design a query that calculates the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query.
-HINT
-Design a query to get the previous 12 months of temperature observation (TOBS) data. To do so, complete the following steps:
-Filter by the station that has the greatest number of observations.
-Query the previous 12 months of TOBS data for that station.
-Plot the results as a histogram with bins=12, as the following image shows:
-A screenshot depicts the histogram.
+Below you can see the histogram of my results:
 
-Close your session.
+
 Part 2: Design Your Climate App
 
 Now that you’ve completed your initial analysis, you’ll design a Flask API based on the queries that you just developed. To do so, use Flask to create your routes as follows:
