@@ -22,6 +22,12 @@ Below you can see the histogram of my results:
 
 ![](https://github.com/Houdini24/sqlalchemy-challenge/blob/main/Resources/Temperature%20for%20Station%20USC00519281.png)
 
+### Acknowledgements
+I used the following resources to help complete this project:
 
-
-
+* AskBCS Learning Assistants
+* GitHub
+* UCB Coding Bootcamp GitLab
+* ChatGPT
+* Bootcamp Tutor David Chao
+* W3 Schools
